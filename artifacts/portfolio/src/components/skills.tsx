@@ -8,28 +8,28 @@ const skills = [
     name: "Java",
     icon: <FaJava className="w-10 h-10" />,
     level: 90,
-    color: "text-orange-500",
+    color: "text-red-800",
     description: "Core language, data structures, algorithms."
   },
   {
     name: "Object-Oriented Programming",
     icon: <FaCode className="w-10 h-10" />,
     level: 85,
-    color: "text-blue-400",
+    color: "text-red-700",
     description: "Design patterns, inheritance, polymorphism."
   },
   {
     name: "Problem Solving",
     icon: <BrainCircuit className="w-10 h-10" />,
     level: 80,
-    color: "text-purple-500",
+    color: "text-amber-800",
     description: "Algorithmic thinking, debugging."
   },
   {
     name: "Microsoft Excel",
     icon: <FaMicrosoft className="w-10 h-10" />,
     level: 75,
-    color: "text-green-500",
+    color: "text-stone-600",
     description: "Data analysis, functions, reporting."
   }
 ];

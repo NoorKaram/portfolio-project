@@ -96,64 +96,64 @@
 
 /* Base variables */
 :root {
-  --button-outline: rgba(255, 255, 255, 0.1);
-  --badge-outline: rgba(255, 255, 255, 0.05);
+  --button-outline: rgba(122, 31, 31, 0.2);
+  --badge-outline: rgba(122, 31, 31, 0.1);
   --opaque-button-border-intensity: 9;
-  --elevate-1: rgba(255, 255, 255, 0.04);
-  --elevate-2: rgba(255, 255, 255, 0.09);
+  --elevate-1: rgba(0, 0, 0, 0.03);
+  --elevate-2: rgba(0, 0, 0, 0.06);
 
-  /* Deep Navy background */
-  --background: 230 50% 5%;
-  --foreground: 0 0% 98%;
+  /* Off-White background */
+  --background: 38 37% 96%;
+  --foreground: 0 0% 17%;
 
   /* Borders & UI elements */
-  --border: 230 30% 15%;
-  --input: 230 30% 15%;
-  --ring: 190 100% 50%; /* Cyan focus ring */
+  --border: 35 25% 84%;
+  --input: 35 25% 84%;
+  --ring: 0 59% 30%;
 
   /* Cards */
-  --card: 230 40% 8%;
-  --card-foreground: 0 0% 98%;
-  --card-border: 230 30% 15%;
+  --card: 40 67% 99%;
+  --card-foreground: 0 0% 17%;
+  --card-border: 35 25% 88%;
 
-  /* Cyan Accent */
-  --primary: 190 100% 50%;
-  --primary-foreground: 230 50% 5%;
-  
-  /* Secondary Navy */
-  --secondary: 230 40% 15%;
-  --secondary-foreground: 0 0% 98%;
+  /* Primary: Dark Red #7A1F1F */
+  --primary: 0 59% 30%;
+  --primary-foreground: 40 67% 99%;
+
+  /* Secondary: warm beige surface */
+  --secondary: 35 30% 90%;
+  --secondary-foreground: 0 0% 17%;
 
   /* Muted */
-  --muted: 230 30% 12%;
-  --muted-foreground: 230 20% 70%;
+  --muted: 35 20% 92%;
+  --muted-foreground: 0 0% 40%;
 
-  /* Accent */
-  --accent: 190 100% 50%;
-  --accent-foreground: 230 50% 5%;
+  /* Accent: Light Beige #D8C3A5 */
+  --accent: 35 39% 74%;
+  --accent-foreground: 0 0% 17%;
 
   /* Other */
-  --popover: 230 40% 8%;
-  --popover-foreground: 0 0% 98%;
-  --popover-border: 230 30% 15%;
+  --popover: 40 67% 99%;
+  --popover-foreground: 0 0% 17%;
+  --popover-border: 35 25% 84%;
 
-  --destructive: 0 84% 60%;
+  --destructive: 0 84% 50%;
   --destructive-foreground: 0 0% 98%;
 
-  --sidebar: 230 50% 5%;
-  --sidebar-foreground: 0 0% 98%;
-  --sidebar-border: 230 30% 15%;
-  --sidebar-primary: 190 100% 50%;
-  --sidebar-primary-foreground: 230 50% 5%;
-  --sidebar-accent: 230 40% 15%;
-  --sidebar-accent-foreground: 0 0% 98%;
-  --sidebar-ring: 190 100% 50%;
+  --sidebar: 38 37% 96%;
+  --sidebar-foreground: 0 0% 17%;
+  --sidebar-border: 35 25% 84%;
+  --sidebar-primary: 0 59% 30%;
+  --sidebar-primary-foreground: 40 67% 99%;
+  --sidebar-accent: 35 30% 90%;
+  --sidebar-accent-foreground: 0 0% 17%;
+  --sidebar-ring: 0 59% 30%;
 
-  --chart-1: 190 100% 50%;
-  --chart-2: 210 100% 60%;
-  --chart-3: 230 100% 70%;
-  --chart-4: 250 100% 70%;
-  --chart-5: 270 100% 70%;
+  --chart-1: 0 59% 30%;
+  --chart-2: 0 61% 22%;
+  --chart-3: 35 39% 74%;
+  --chart-4: 38 37% 80%;
+  --chart-5: 0 50% 42%;
 
   --radius: 0.5rem;
 
@@ -189,22 +189,22 @@ html {
 
 @layer utilities {
   .text-glow {
-    text-shadow: 0 0 20px hsl(var(--primary) / 0.5);
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.4);
   }
   
   .box-glow {
-    box-shadow: 0 0 20px hsl(var(--primary) / 0.15);
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.12);
   }
   
   .box-glow-hover:hover {
-    box-shadow: 0 0 30px hsl(var(--primary) / 0.3);
-    border-color: hsl(var(--primary) / 0.5);
+    box-shadow: 0 0 30px hsl(var(--primary) / 0.25);
+    border-color: hsl(var(--primary) / 0.4);
   }
 
   .mesh-bg {
     background-color: hsl(var(--background));
     background-image: 
-      radial-gradient(at 0% 0%, hsl(var(--primary) / 0.15) 0px, transparent 50%),
-      radial-gradient(at 100% 100%, hsl(var(--primary) / 0.1) 0px, transparent 50%);
+      radial-gradient(at 0% 0%, hsl(var(--primary) / 0.08) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, hsl(35 39% 74% / 0.15) 0px, transparent 50%);
   }
 }

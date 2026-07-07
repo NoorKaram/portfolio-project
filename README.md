@@ -84,7 +84,7 @@ public/
 
 ## 🌐 Live Demo
 
-Coming Soon
+https://portfolio-project-noorkaramallah.vercel.app/
 
 ---
 
